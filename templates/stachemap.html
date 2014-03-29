@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bikestache.css') }}">
+  <script src="{{ url_for('static', filename='js/bikestache.js') }}"></script>
+{% endblock %}
+{% block title %} - Stache Map{% endblock %}
+{% block content %}
+
+<div id="map-canvas"></div>
+{% endblock %}
